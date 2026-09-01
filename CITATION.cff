@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If this curated resource supports your research, please cite it using the metadata below."
+type: dataset
+title: "Awesome Recursive Self-Critiquing"
+abstract: >-
+  A curated, evaluation-first collection of research, benchmarks, open-source
+  projects, and industry systems related to recursive self-critiquing and
+  recursive self-improvement.
+authors:
+  - name: "pILLOW-1"
+    website: "https://github.com/pILLOW-1"
+version: 0.1.0
+date-released: 2026-09-01
+repository-code: "https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing"
+url: "https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing"
+license: CC-BY-4.0
+keywords:
+  - recursive self-critiquing
+  - recursive self-improvement
+  - self-critique
+  - self-correction
+  - LLM evaluation
+  - agent evaluation
+  - scalable oversight
+  - weak-to-strong supervision
+  - automated AI research

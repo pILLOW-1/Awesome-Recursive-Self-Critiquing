@@ -9,10 +9,14 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Last Updated](https://img.shields.io/badge/updated-2026--09--01-blue)](#)
+[![Machine-readable catalog](https://img.shields.io/badge/catalog-JSON-0b7285)](catalog.json)
+[![Cite this repository](https://img.shields.io/badge/citation-CFF-7c3aed)](CITATION.cff)
 
 The central question is not simply whether a model can "reflect," but whether a system can **reliably identify shortcomings, improve itself across iterations, and demonstrate causal, persistent, and generalizable gains under a sound evaluation protocol**.
 
 This list is deliberately selective. Evaluation-first work is prioritized over broad self-improvement claims.
+
+**For agents and research tools:** [machine-readable catalog](catalog.json) · [LLM navigation file](llms.txt) · [citation metadata](CITATION.cff)
 
 ---
 
@@ -29,6 +33,7 @@ This list is deliberately selective. Evaluation-first work is prioritized over b
   - [Recursive Self-Critique Systems](#recursive-self-critique-systems)
   - [Metric and Evaluation Infrastructure](#metric-and-evaluation-infrastructure)
   - [AI R&D Measurement](#ai-rd-measurement)
+- [Machine-Readable Access](#-machine-readable-access)
 - [Open Evaluation Questions](#-open-evaluation-questions)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -190,6 +195,16 @@ These products can support an evaluation-feedback-improvement loop, but are **in
 
 ---
 
+## 🤖 Machine-Readable Access
+
+- **[`catalog.json`](catalog.json)** — Structured metadata for every curated resource, including stable IDs, categories, primary links, relevance explanations, scope notes, and retrieval tags.
+- **[`llms.txt`](llms.txt)** — A compact navigation map that points agents to the repository's scope, evaluation framework, catalog, contribution rules, and releases.
+- **[`CITATION.cff`](CITATION.cff)** — Human- and machine-readable citation metadata used by GitHub's **Cite this repository** interface.
+
+The README is the canonical editorial view. `catalog.json` is the canonical machine-readable index. Pull requests that change the resource list should update both.
+
+---
+
 ## 🔍 Open Evaluation Questions
 
 1. **Evaluator independence** — How much improvement remains when the generator cannot see or overfit the final evaluator?
@@ -207,7 +222,7 @@ These products can support an evaluation-feedback-improvement loop, but are **in
 
 ## 🤝 Contributing
 
-Contributions are welcome, but relevance and evidence take priority over list size.
+Contributions are welcome, but relevance and evidence take priority over list size. Read the full [Contribution Guidelines](CONTRIBUTING.md) before opening an issue or pull request.
 
 Before opening a pull request, please provide:
 
@@ -227,6 +242,8 @@ Suggested entry format:
 ```
 
 For major taxonomy changes, please open an issue before submitting a pull request.
+
+Every resource addition or metadata correction should update both `README.md` and `catalog.json` in the same pull request.
 
 ---
 

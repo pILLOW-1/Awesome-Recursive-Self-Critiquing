@@ -1,0 +1,27 @@
+# Awesome Recursive Self-Critiquing
+
+> An evaluation-first map of research, benchmarks, open-source projects, and industry systems related to recursive self-critiquing and recursive self-improvement.
+
+Use this repository to identify work that measures critique quality, iterative correction, higher-order critique, scalable oversight, self-improving evaluators, and automated AI research. Prefer primary sources and preserve the scope notes attached to entries. Inclusion does not imply that a system performs unrestricted or weight-level recursive self-improvement.
+
+## Core Resources
+
+- [Repository README](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing#readme): Human-readable scope, evaluation lens, curated entries, and open research questions.
+- [Raw README](https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/README.md): Direct Markdown representation for retrieval and context assembly.
+- [Machine-readable catalog](https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/catalog.json): Structured metadata, stable identifiers, links, relevance explanations, scope notes, and tags for every curated resource.
+
+## Evaluation Framework
+
+- [Evaluation Lens](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing#-evaluation-lens): Outcome improvement, causal attribution, critique quality, recursive depth, oversight asymmetry, generalization, efficiency, robustness, and safety.
+- [Open Evaluation Questions](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing#-open-evaluation-questions): Unresolved questions concerning evaluator independence, critique faithfulness, stopping, regressions, persistence, Goodhart effects, and cost-normalized progress.
+
+## Contribution and Citation
+
+- [Contribution Guidelines](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/blob/main/CONTRIBUTING.md): Inclusion criteria, evidence checklist, pull request format, and catalog synchronization rules.
+- [Citation Metadata](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/blob/main/CITATION.cff): Machine-readable citation information.
+- [Releases](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/releases): Versioned snapshots and update notes.
+
+## Optional
+
+- [Repository Issues](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/issues): Proposed resources, corrections, and taxonomy discussions.
+- [Repository Topics](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing): GitHub discovery metadata for recursive self-critiquing, RSI, LLM evaluation, agent evaluation, and scalable oversight.

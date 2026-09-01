@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Awesome Recursive Self-Critiquing",
+  "description": "A curated, evaluation-first catalog of recursive self-critiquing and recursive self-improvement research, benchmarks, projects, and industry systems.",
+  "repository": "https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing",
+  "license": "CC-BY-4.0",
+  "last_updated": "2026-09-01",
+  "scope": {
+    "include": [
+      "Explicit evaluation of critique, correction, recursive depth, or iterative improvement",
+      "Scalable oversight and weak-to-strong supervision protocols",
+      "Evaluators or reward models that participate in an improvement loop",
+      "Executable environments that measure improvement of AI artifacts or future agent behavior",
+      "Industry systems with public technical evidence for an evaluation-feedback-improvement workflow"
+    ],
+    "exclude": [
+      "Generic LLM-as-a-judge work without an improvement or oversight connection",
+      "Single-pass reflection without controlled baselines or held-out evaluation",
+      "General agent, RL, observability, or AutoML platforms without a measured improvement loop",
+      "Marketing claims without enough public methodology to identify what improved and how it was measured"
+    ]
+  },
+  "evaluation_dimensions": [
+    "outcome-improvement",
+    "causal-attribution",
+    "critique-quality",
+    "recursive-depth",
+    "oversight-asymmetry",
+    "generalization-and-persistence",
+    "efficiency",
+    "robustness-and-safety"
+  ],
+  "resources": [
+    {
+      "id": "scalable-oversight-recursive-self-critiquing",
+      "name": "Scalable Oversight for Superhuman AI via Recursive Self-Critiquing",
+      "year": 2026,
+      "group": "academic",
+      "section": "recursive-critique-and-scalable-oversight",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2502.04675"
+      },
+      "relevance": "Directly evaluates response, critique, and C2/C3 chains across Human-Human, Human-AI, and AI-AI oversight settings.",
+      "scope_note": "The central contribution is an oversight protocol and its evaluation, not unrestricted autonomous weight-level self-improvement.",
+      "tags": ["recursive-critique", "higher-order-critique", "scalable-oversight", "weak-to-strong"]
+    },
+    {
+      "id": "benchmark-scalable-oversight-protocols",
+      "name": "A Benchmark for Scalable Oversight Protocols",
+      "year": 2025,
+      "group": "academic",
+      "section": "recursive-critique-and-scalable-oversight",
+      "type": "benchmark-paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2504.03731"
+      },
+      "relevance": "Introduces a protocol-agnostic benchmark and Agent Score Difference for testing whether oversight advantages truth-telling over deception.",
+      "scope_note": "Debate is a demonstration within a broader oversight benchmark rather than evidence that debate alone solves scalable oversight.",
+      "tags": ["scalable-oversight", "deception", "benchmark", "causal-attribution"]
+    },
+    {
+      "id": "weak-llms-judging-strong-llms",
+      "name": "On Scalable Oversight with Weak LLMs Judging Strong LLMs",
+      "year": 2024,
+      "group": "academic",
+      "section": "recursive-critique-and-scalable-oversight",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2407.04622"
+      },
+      "relevance": "Compares debate, consultancy, and direct question answering under controlled capability asymmetries.",
+      "scope_note": "Results are mixed outside information-asymmetric question answering and should not be generalized to all oversight tasks.",
+      "tags": ["weak-to-strong", "scalable-oversight", "debate", "negative-results"]
+    },
+    {
+      "id": "llm-critics-catch-llm-bugs",
+      "name": "LLM Critics Help Catch LLM Bugs",
+      "year": 2024,
+      "group": "academic",
+      "section": "recursive-critique-and-scalable-oversight",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2407.00215"
+      },
+      "relevance": "Tests whether model-generated critiques improve human oversight of model-written code and measures hallucinated bug reports.",
+      "scope_note": "The evaluated improvement is human oversight quality, not autonomous recursive self-improvement.",
+      "tags": ["critique-quality", "human-ai-oversight", "code", "critique-hallucination"]
+    },
+    {
+      "id": "measuring-progress-scalable-oversight",
+      "name": "Measuring Progress on Scalable Oversight for Large Language Models",
+      "year": 2022,
+      "group": "academic",
+      "section": "recursive-critique-and-scalable-oversight",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2211.03540"
+      },
+      "relevance": "Provides an empirical template for evaluating oversight on tasks where specialists outperform unaided humans and current models.",
+      "scope_note": "This is a measurement framework and precursor rather than a recursive critique system.",
+      "tags": ["scalable-oversight", "evaluation-design", "human-baseline"]
+    },
+    {
+      "id": "realcritic",
+      "name": "RealCritic: Towards Effectiveness-Driven Evaluation of Language Model Critiques",
+      "year": 2025,
+      "group": "academic",
+      "section": "critique-and-self-correction-evaluation",
+      "type": "paper-and-code",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2501.14492",
+        "code": "https://github.com/tangzhy/RealCritic"
+      },
+      "relevance": "Evaluates critique quality through the corrections caused by self-critique, cross-critique, and iterative critique.",
+      "scope_note": "Correction effectiveness is the primary endpoint; it does not establish persistent model-level improvement.",
+      "tags": ["critique-quality", "self-critique", "cross-critique", "iterative-revision"]
+    },
+    {
+      "id": "cast-critique-aware-supervision",
+      "name": "CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents",
+      "year": 2026,
+      "group": "academic",
+      "section": "critique-and-self-correction-evaluation",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.30147"
+      },
+      "relevance": "Evaluates action-level critic calibration, correction after feedback, resistance, repeated-run reliability, verification interactions, and cost.",
+      "scope_note": "CAST uses a separate actor and critic rather than higher-order self-critique, and its current policy training is supervised rather than on-policy.",
+      "tags": ["actor-critic", "tool-calling", "critique-quality", "iterative-correction", "efficiency"]
+    },
+    {
+      "id": "criticbench",
+      "name": "CriticBench: Benchmarking LLMs for Critique-Correct Reasoning",
+      "year": 2024,
+      "group": "academic",
+      "section": "critique-and-self-correction-evaluation",
+      "type": "benchmark-and-code",
+      "urls": {
+        "paper": "https://aclanthology.org/2024.findings-acl.91/",
+        "code": "https://github.com/CriticBench/CriticBench"
+      },
+      "relevance": "Separates generation, critique, and correction across reasoning and coding datasets to localize failures in the loop.",
+      "scope_note": "The benchmark diagnoses component capability and does not by itself demonstrate a persistent self-improving system.",
+      "tags": ["benchmark", "critique-quality", "correction", "reasoning"]
+    },
+    {
+      "id": "critical-survey-self-correction",
+      "name": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+      "year": 2024,
+      "group": "academic",
+      "section": "critique-and-self-correction-evaluation",
+      "type": "survey",
+      "urls": {
+        "paper": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00713/125177/When-Can-LLMs-Actually-Correct-Their-Own-Mistakes"
+      },
+      "relevance": "Defines evaluation pitfalls and boundary conditions for intrinsic and externally guided self-correction.",
+      "scope_note": "It is a survey and evaluation checklist rather than a new recursive self-correction method.",
+      "tags": ["survey", "self-correction", "evaluation-design", "baseline-quality"]
+    },
+    {
+      "id": "mind-the-gap-self-improvement",
+      "name": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "year": 2024,
+      "group": "academic",
+      "section": "critique-and-self-correction-evaluation",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2412.02674"
+      },
+      "relevance": "Formalizes the generation-verification gap and tests whether self-evaluation contains enough signal to improve a generator.",
+      "scope_note": "Improvement depends on the verification, filtering, reweighting, and distillation setup rather than reflection alone.",
+      "tags": ["generation-verification-gap", "self-evaluation", "distillation", "causal-attribution"]
+    },
+    {
+      "id": "meta-rewarding-language-models",
+      "name": "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+      "year": 2024,
+      "group": "academic",
+      "section": "self-improving-evaluators-and-reward-models",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2407.19594"
+      },
+      "relevance": "Uses a meta-judge to evaluate the model's own judgments and counter saturation in self-rewarding loops.",
+      "scope_note": "The meta-judge remains part of the same synthetic feedback ecosystem and may share its biases.",
+      "tags": ["meta-judge", "reward-modeling", "self-reward", "alignment"]
+    },
+    {
+      "id": "self-taught-evaluators",
+      "name": "Self-Taught Evaluators",
+      "year": 2024,
+      "group": "academic",
+      "section": "self-improving-evaluators-and-reward-models",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2408.02666"
+      },
+      "relevance": "Iteratively improves an evaluator from synthetic contrasts, reasoning traces, and regenerated judgments without labeled preference data.",
+      "scope_note": "Evaluation focuses on judge quality such as RewardBench rather than broader autonomous system improvement.",
+      "tags": ["self-improving-evaluator", "synthetic-data", "rewardbench", "iterative-training"]
+    },
+    {
+      "id": "self-generated-critiques-reward-modeling",
+      "name": "Self-Generated Critiques Boost Reward Modeling for Language Models",
+      "year": 2025,
+      "group": "academic",
+      "section": "self-improving-evaluators-and-reward-models",
+      "type": "paper",
+      "urls": {
+        "paper": "https://aclanthology.org/2025.naacl-long.573/"
+      },
+      "relevance": "Tests whether generated and filtered natural-language critiques improve scalar reward prediction and downstream evaluation.",
+      "scope_note": "The critic-enhanced reward model is one component of an improvement pipeline rather than a complete RSI system.",
+      "tags": ["reward-modeling", "generated-critiques", "preference-learning"]
+    },
+    {
+      "id": "critique-out-loud-reward-models",
+      "name": "Critique-out-Loud Reward Models",
+      "year": 2024,
+      "group": "academic",
+      "section": "self-improving-evaluators-and-reward-models",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2408.11791"
+      },
+      "relevance": "Generates an explicit critique before scalar reward prediction and evaluates preference accuracy and Best-of-N utility.",
+      "scope_note": "Explicit critique improves an evaluator but is not itself recursive unless embedded in a larger loop.",
+      "tags": ["reward-modeling", "critique-generation", "best-of-n", "evaluator"]
+    },
+    {
+      "id": "autoscirub",
+      "name": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "paper-and-code",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.31076",
+        "code": "https://github.com/zjunlp/AutoSciRub"
+      },
+      "relevance": "Compares matched rubric-free and rubric-guided revision across rounds, models, agent harnesses, and research benchmarks.",
+      "scope_note": "AutoSciRub improves research artifacts and the inference-time workflow rather than underlying model weights.",
+      "tags": ["automated-ai-research", "rubric", "iterative-revision", "causal-attribution", "agent-evaluation"]
+    },
+    {
+      "id": "ai4ai-bench",
+      "name": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-and-code",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.20318",
+        "code": "https://github.com/Einsia/AI4AI-Bench"
+      },
+      "relevance": "Tests whether agents can modify training algorithms in frozen repositories and generalize through fresh retraining and hidden evaluation.",
+      "scope_note": "The benchmark measures algorithm-design capability under bounded tasks, not open-ended recursive self-improvement.",
+      "tags": ["benchmark", "algorithm-design", "automated-ai-research", "hidden-evaluation"]
+    },
+    {
+      "id": "past-bench",
+      "name": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-and-code",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.04003",
+        "code": "https://github.com/Gen-Verse/PAST-Bench"
+      },
+      "relevance": "Uses matched fresh-session sequences to test whether retained experience causally improves later tasks through the intended memory pathway.",
+      "scope_note": "The target is persistent agent behavior through memory rather than model-weight self-improvement.",
+      "tags": ["benchmark", "memory", "persistence", "causal-attribution", "personal-agents"]
+    },
+    {
+      "id": "rsi-exam",
+      "name": "RSI-Exam: Benchmarking Recursive Self-Improvement through Executable Research",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-and-data",
+      "urls": {
+        "benchmark": "https://rsi-exam.ai/",
+        "data": "https://huggingface.co/datasets/RSI-Exam/RSI-Exam"
+      },
+      "relevance": "Uses development and sealed evaluation environments to measure whether agents improve methods or harnesses and generalize to hidden data.",
+      "scope_note": "It does not claim unrestricted or weight-level recursive self-improvement.",
+      "tags": ["benchmark", "executable-research", "hidden-evaluation", "automated-ai-research"]
+    },
+    {
+      "id": "re-bench",
+      "name": "RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents Against Human Experts",
+      "year": 2024,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-and-code",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2411.15114",
+        "code": "https://github.com/METR/RE-Bench"
+      },
+      "relevance": "Provides open-ended ML research-engineering environments and human-expert baselines across time budgets.",
+      "scope_note": "RE-Bench measures a prerequisite AI R&D capability and is not an RSI test by itself.",
+      "tags": ["benchmark", "ai-rd", "human-baseline", "agent-evaluation"]
+    },
+    {
+      "id": "self-taught-optimizer-stop",
+      "name": "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation",
+      "year": 2023,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2310.02304"
+      },
+      "relevance": "Evaluates a language-model-infused improver that rewrites its own scaffolding against an explicit utility function.",
+      "scope_note": "The scaffold improves recursively while the underlying language model weights remain fixed.",
+      "tags": ["scaffold-improvement", "code-generation", "recursive-optimization"]
+    },
+    {
+      "id": "dots3-recursive-self-critique",
+      "name": "dots studio — dots3 / dots3-note Preview",
+      "year": 2026,
+      "group": "industry",
+      "section": "recursive-self-critique-systems",
+      "type": "system-and-model",
+      "urls": {
+        "technical_blog": "https://studio.dots.ai/dots/dots3-en.html",
+        "methodology": "https://github.com/studio-dots-ai/dots_imo_2026",
+        "model": "https://huggingface.co/dots-studio/dots3-note-prev"
+      },
+      "relevance": "Documents a Proof-Verify-Refine system with repeated critique, review, correction, and synthesis.",
+      "scope_note": "The open preview model and internal IMO system should not be treated as identical; a full dots3 technical report remains pending.",
+      "tags": ["industry", "proof-verification", "iterative-refinement", "open-weights"]
+    },
+    {
+      "id": "patronus-ai",
+      "name": "Patronus AI",
+      "year": null,
+      "group": "industry",
+      "section": "metric-and-evaluation-infrastructure",
+      "type": "evaluation-platform",
+      "urls": {
+        "platform": "https://www.patronus.ai/",
+        "lynx": "https://docs.patronus.ai/docs/evaluators/advanced_concepts/lynx",
+        "glider": "https://docs.patronus.ai/docs/evaluators/advanced_concepts/glider",
+        "percival": "https://patronus.ai/percival"
+      },
+      "relevance": "Provides groundedness evaluation, explainable rubric scoring, trace-level failure diagnosis, and prompt-improvement proposals.",
+      "scope_note": "Evaluation infrastructure can support an improvement loop but is not evidence of recursive self-improvement by itself.",
+      "tags": ["industry", "evaluation-platform", "trace-analysis", "rubric"]
+    },
+    {
+      "id": "braintrust",
+      "name": "Braintrust",
+      "year": null,
+      "group": "industry",
+      "section": "metric-and-evaluation-infrastructure",
+      "type": "evaluation-platform",
+      "urls": {
+        "platform": "https://www.braintrust.dev/docs/evaluate",
+        "autoevals": "https://github.com/braintrustdata/autoevals",
+        "loop": "https://www.braintrust.dev/docs/loop"
+      },
+      "relevance": "Connects production traces, datasets, experiments, reusable scorers, regression tracking, and proposed system changes.",
+      "scope_note": "The platform enables continual evaluation workflows but does not establish RSI without a measured closed-loop deployment.",
+      "tags": ["industry", "evaluation-platform", "production-traces", "continual-evaluation"]
+    },
+    {
+      "id": "metr",
+      "name": "METR",
+      "year": null,
+      "group": "industry",
+      "section": "ai-rd-measurement",
+      "type": "research-organization",
+      "urls": {
+        "report": "https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/",
+        "code": "https://github.com/METR/RE-Bench"
+      },
+      "relevance": "Measures autonomous AI R&D capability against human experts and across time budgets in open environments.",
+      "scope_note": "AI R&D capability is a prerequisite for some RSI pathways but is not equivalent to recursive self-improvement.",
+      "tags": ["industry", "ai-rd", "benchmarking", "human-baseline"]
+    },
+    {
+      "id": "anthropic-institute-recursive-self-improvement",
+      "name": "The Anthropic Institute — When AI Builds Itself",
+      "year": 2026,
+      "group": "industry",
+      "section": "ai-rd-measurement",
+      "type": "industry-analysis",
+      "urls": {
+        "analysis": "https://www.anthropic.com/institute/recursive-self-improvement"
+      },
+      "relevance": "Frames progress toward automated AI R&D through public benchmarks, internal productivity evidence, telemetry, oversight, validation, and verification gaps.",
+      "scope_note": "This is an industry measurement perspective rather than an independently reproducible RSI benchmark.",
+      "tags": ["industry", "automated-ai-research", "recursive-self-improvement", "measurement"]
+    }
+  ]
+}

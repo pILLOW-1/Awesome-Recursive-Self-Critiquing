@@ -7,6 +7,7 @@
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Project Website](https://img.shields.io/badge/project-website-165df5)](https://awesome-recursive-self-critiquing.saxoe.chatgpt.site)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Last Updated](https://img.shields.io/badge/updated-2026--09--01-blue)](#)
 [![Machine-readable catalog](https://img.shields.io/badge/catalog-JSON-0b7285)](catalog.json)

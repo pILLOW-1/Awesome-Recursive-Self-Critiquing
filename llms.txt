@@ -6,6 +6,7 @@ Use this repository to identify work that measures critique quality, iterative c
 
 ## Core Resources
 
+- [Project website](https://awesome-recursive-self-critiquing.saxoe.chatgpt.site): Interactive research map, evaluation framework, and searchable catalog.
 - [Repository README](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing#readme): Human-readable scope, evaluation lens, curated entries, and open research questions.
 - [Raw README](https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/README.md): Direct Markdown representation for retrieval and context assembly.
 - [Machine-readable catalog](https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/catalog.json): Structured metadata, stable identifiers, links, relevance explanations, scope notes, and tags for every curated resource.

@@ -24,6 +24,7 @@ This list is deliberately selective. Evaluation-first work is prioritized over b
 ## 📖 Table of Contents
 
 - [Scope](#-scope)
+- [Why Evaluation-First RSI?](#-why-evaluation-first-rsi)
 - [Evaluation Lens](#-evaluation-lens)
 - [Academic Research](#-academic-research)
   - [Recursive Critique and Scalable Oversight](#recursive-critique-and-scalable-oversight)
@@ -38,6 +39,25 @@ This list is deliberately selective. Evaluation-first work is prioritized over b
 - [Open Evaluation Questions](#-open-evaluation-questions)
 - [Contributing](#-contributing)
 - [License](#-license)
+
+---
+
+## 🧭 Why Evaluation-First RSI?
+
+Recursive self-improvement is often discussed as an optimization problem: can a system generate a better successor, scaffold, policy, dataset, evaluator, or research process? This repository starts from a prior question: **how would we know that the apparent improvement is real?**
+
+In ordinary evaluation, the benchmark is treated as external to the system. In RSI, that assumption becomes fragile. The improver may influence the critic, training data, reward signal, benchmark exposure, stopping rule, or interpretation of success. Evaluation is therefore not merely a downstream scorecard; it is part of the recursive system and a potential target of optimization.
+
+An evaluation-first view focuses attention on four recurring risks:
+
+- **Self-confirmation** — The generator and critic share blind spots, so repeated agreement is mistaken for independent evidence.
+- **Metric capture** — The system raises the measured score without improving the underlying capability or objective.
+- **Non-persistent gains** — Improvements disappear on hidden tests, fresh sessions, new distributions, or future iterations.
+- **False attribution** — More compute, sampling, search, or privileged feedback causes the gain, while recursion receives the credit.
+
+> **Working thesis:** RSI needs an evaluation science, not just a stronger optimization loop.
+
+This is also an invitation. We welcome benchmarks, negative results, causal ablations, evaluation protocols, and public industry evidence that make recursive improvement claims more falsifiable.
 
 ---
 

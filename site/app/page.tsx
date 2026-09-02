@@ -78,6 +78,7 @@ export default function Home() {
             </span>
           </a>
           <nav className="hidden items-center gap-7 text-sm text-slate-600 md:flex" aria-label="Main navigation">
+            <a className="nav-link" href="#position">Position</a>
             <a className="nav-link" href="#framework">Framework</a>
             <a className="nav-link" href="#catalog">Catalog</a>
             <a className="nav-link" href="#questions">Questions</a>
@@ -102,7 +103,7 @@ export default function Home() {
             <p className="hero-lede">
               Self-critique is one component of self-improvement. The deeper problem is
               whether evaluation remains reliable as the system, critic, and target
-              co-evolve.
+              co-evolve. This project treats evaluation as a first-class object of RSI research.
             </p>
             <div className="hero-actions">
               <a className="button-primary" href="#catalog">
@@ -148,6 +149,26 @@ export default function Home() {
           <div><span>02</span><strong>Evaluate</strong><p>Test the feedback</p></div>
           <div className="thesis-arrow" aria-hidden="true">→</div>
           <div><span>03</span><strong>Improve</strong><p>Verify persistent gain</p></div>
+        </div>
+      </section>
+
+      <section id="position" className="position-section scroll-mt-20">
+        <div className="page-shell position-layout">
+          <div className="position-statement">
+            <p className="eyebrow"><CircleDot aria-hidden="true" /> The position</p>
+            <h2>RSI needs an evaluation science, not just a stronger optimization loop.</h2>
+            <p>
+              In recursive systems, the evaluator is not guaranteed to remain outside the
+              loop. The improver may shape the critic, data, reward, benchmark exposure,
+              stopping rule, or even the definition of success.
+            </p>
+          </div>
+          <div className="risk-grid">
+            <article><span>01</span><h3>Self-confirmation</h3><p>Shared blind spots turn repeated agreement into false confidence.</p></article>
+            <article><span>02</span><h3>Metric capture</h3><p>The score rises while the underlying objective stays unchanged.</p></article>
+            <article><span>03</span><h3>Fragile gains</h3><p>Apparent improvement disappears on hidden tests or future iterations.</p></article>
+            <article><span>04</span><h3>False attribution</h3><p>Extra search or privileged feedback improves results, but recursion gets the credit.</p></article>
+          </div>
         </div>
       </section>
 

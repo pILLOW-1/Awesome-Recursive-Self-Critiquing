@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Awesome Recursive Self-Critiquing',
   description:
-    'An evaluation-first research index for recursive self-critiquing, scalable oversight, and recursive self-improvement.',
+    'RSI needs an evaluation science, not just a stronger optimization loop. Explore recursive self-critiquing, scalable oversight, benchmarks, and open evaluation questions.',
   openGraph: {
     title: 'Awesome Recursive Self-Critiquing',
     description:
-      'Can recursive self-critique reliably guide self-improvement? Explore the evidence, benchmarks, and open evaluation questions.',
+      'Evaluation is part of the recursive system. Explore the evidence, benchmarks, failure modes, and open questions behind recursive self-improvement claims.',
     type: 'website',
     images: [
       'https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/assets/recursive-self-critiquing.png',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Awesome Recursive Self-Critiquing',
-    description: 'An evaluation-first map of recursive self-improvement research.',
+    description: 'RSI needs an evaluation science, not just a stronger optimization loop.',
     images: [
       'https://raw.githubusercontent.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/main/assets/recursive-self-critiquing.png',
     ],

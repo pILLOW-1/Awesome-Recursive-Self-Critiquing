@@ -19,6 +19,8 @@ This list is deliberately selective. Evaluation-first work is prioritized over b
 
 **For agents and research tools:** [machine-readable catalog](catalog.json) · [LLM navigation file](llms.txt) · [citation metadata](CITATION.cff)
 
+**For sharing and discussion:** [bilingual outreach kit](docs/OUTREACH.md) · [Evaluation Is Part of the Recursive System](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/discussions/1)
+
 ---
 
 ## 📖 Table of Contents
@@ -58,6 +60,8 @@ An evaluation-first view focuses attention on four recurring risks:
 > **Working thesis:** RSI needs an evaluation science, not just a stronger optimization loop.
 
 This is also an invitation. We welcome benchmarks, negative results, causal ablations, evaluation protocols, and public industry evidence that make recursive improvement claims more falsifiable.
+
+Join the public research discussion: **[Evaluation Is Part of the Recursive System](https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing/discussions/1)**.
 
 ---
 

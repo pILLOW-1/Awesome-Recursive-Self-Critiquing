@@ -9,11 +9,11 @@ import { Input } from '@/components/ui/input';
 type Resource = {
   id: string;
   name: string;
-  year: number;
+  year: number | null;
   group: string;
   section: string;
   type: string;
-  urls: Record<string, string>;
+  urls: Record<string, string | undefined>;
   relevance: string;
   scope_note: string;
   tags: string[];
@@ -25,17 +25,18 @@ const sectionLabels: Record<string, string> = {
   'self-improving-evaluators-and-reward-models': 'Evaluator improvement',
   'rsi-and-automated-ai-rd-benchmarks': 'AI R&D benchmarks',
   'recursive-self-critique-systems': 'Recursive systems',
+  'model-and-metric-level-feedback': 'Model + metric feedback',
   'metric-and-evaluation-infrastructure': 'Evaluation infrastructure',
   'ai-rd-measurement': 'AI R&D measurement',
 };
 
 const linkPriority = ['paper', 'benchmark', 'platform', 'technical_blog', 'report', 'code', 'data'];
 
-function primaryLink(urls: Record<string, string>) {
+function primaryLink(urls: Record<string, string | undefined>) {
   for (const key of linkPriority) {
     if (urls[key]) return urls[key];
   }
-  return Object.values(urls)[0];
+  return Object.values(urls).find((value): value is string => Boolean(value)) ?? '#';
 }
 
 export function ResourceExplorer({ resources }: { resources: Resource[] }) {

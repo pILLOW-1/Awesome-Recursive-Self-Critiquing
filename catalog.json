@@ -4,7 +4,7 @@
   "description": "A curated, evaluation-first catalog of recursive self-critiquing and recursive self-improvement research, benchmarks, projects, and industry systems.",
   "repository": "https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing",
   "license": "CC-BY-4.0",
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-09-02",
   "scope": {
     "include": [
       "Explicit evaluation of critique, correction, recursive depth, or iterative improvement",
@@ -230,6 +230,22 @@
       "tags": ["reward-modeling", "critique-generation", "best-of-n", "evaluator"]
     },
     {
+      "id": "features-as-rewards-rlfr",
+      "name": "Features as Rewards: Scalable Supervision for Open-Ended Tasks via Interpretability",
+      "year": 2026,
+      "group": "academic",
+      "section": "self-improving-evaluators-and-reward-models",
+      "type": "paper-and-demo",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2602.10067",
+        "technical_blog": "https://www.goodfire.com/research/rlfr",
+        "demo": "https://www.goodfire.com/demos/hallucinations-viewer"
+      },
+      "relevance": "Uses frozen-model feature probes to evaluate hallucinations and candidate corrections, then feeds those signals into policy training and test-time selection.",
+      "scope_note": "The reported 58% reduction covers the full policy-plus-probing system; only part is attributable to learned policy change, and the pipeline is externally designed rather than recursively self-improving.",
+      "tags": ["interpretability", "feature-rewards", "reinforcement-learning", "hallucination", "test-time-scaling", "evaluator-independence"]
+    },
+    {
       "id": "autoscirub",
       "name": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
       "year": 2026,
@@ -333,6 +349,23 @@
       "relevance": "Documents a Proof-Verify-Refine system with repeated critique, review, correction, and synthesis.",
       "scope_note": "The open preview model and internal IMO system should not be treated as identical; a full dots3 technical report remains pending.",
       "tags": ["industry", "proof-verification", "iterative-refinement", "open-weights"]
+    },
+    {
+      "id": "goodfire-interpretability-guided-improvement",
+      "name": "Goodfire — Silico / Interpretability-Guided Improvement",
+      "year": 2026,
+      "group": "industry",
+      "section": "model-and-metric-level-feedback",
+      "type": "company-and-product",
+      "urls": {
+        "company": "https://www.goodfire.com/",
+        "product": "https://www.goodfire.com/silico",
+        "rlfr": "https://www.goodfire.com/research/rlfr",
+        "self_correcting_search": "https://www.goodfire.com/research/self-correcting-search"
+      },
+      "relevance": "Demonstrates interpretability-derived evaluators used as rewards for weight-level training and as iterative feedback for test-time correction and diffusion search.",
+      "scope_note": "Public evidence supports evaluator-guided model and search improvement, not autonomous or open-ended RSI; Silico's autonomous iteration lacks a public end-to-end RSI benchmark.",
+      "tags": ["industry", "interpretability", "model-level", "metric-level", "feature-rewards", "closed-loop-control"]
     },
     {
       "id": "patronus-ai",

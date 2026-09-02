@@ -9,7 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Project Website](https://img.shields.io/badge/project-website-165df5)](https://awesome-recursive-self-critiquing.saxoe.chatgpt.site)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Last Updated](https://img.shields.io/badge/updated-2026--09--01-blue)](#)
+[![Last Updated](https://img.shields.io/badge/updated-2026--09--02-blue)](#)
 [![Machine-readable catalog](https://img.shields.io/badge/catalog-JSON-0b7285)](catalog.json)
 [![Cite this repository](https://img.shields.io/badge/citation-CFF-7c3aed)](CITATION.cff)
 
@@ -35,6 +35,7 @@ This list is deliberately selective. Evaluation-first work is prioritized over b
   - [RSI and Automated AI R&D Benchmarks](#rsi-and-automated-ai-rd-benchmarks)
 - [Industry and Independent Organizations](#-industry-and-independent-organizations)
   - [Recursive Self-Critique Systems](#recursive-self-critique-systems)
+  - [Model-Level and Metric-Level Feedback](#model-level-and-metric-level-feedback)
   - [Metric and Evaluation Infrastructure](#metric-and-evaluation-infrastructure)
   - [AI R&D Measurement](#ai-rd-measurement)
 - [Machine-Readable Access](#-machine-readable-access)
@@ -171,6 +172,9 @@ Legend: **[Paper]** publication or preprint · **[Code]** implementation or benc
 - **Critique-out-Loud Reward Models** (Ankner et al., 2024) — **[Paper](https://arxiv.org/abs/2408.11791)**
   Makes the reward model reason explicitly by generating a critique before predicting a scalar reward, and evaluates both preference accuracy and Best-of-N downstream utility.
 
+- **Features as Rewards: Scalable Supervision for Open-Ended Tasks via Interpretability** (Prasad et al., 2026) — **[Paper](https://arxiv.org/abs/2602.10067)** · **[Technical article](https://www.goodfire.com/research/rlfr)** · **[Rollout viewer](https://www.goodfire.com/demos/hallucinations-viewer)**
+  Introduces Reinforcement Learning from Feature Rewards (RLFR): probes on a frozen model localize and classify hallucinations, evaluate candidate corrections or retractions, and provide reward signals for policy training and test-time selection. On a held-out LongFact++ test set, the full policy-plus-probing system reports a 58% reduction in hallucinations while preserving standard benchmark performance. **Scope note:** only part of the aggregate reduction is attributable to learned policy change; the evaluator and training pipeline are externally designed rather than recursively self-improving.
+
 ### RSI and Automated AI R&D Benchmarks
 
 - **Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents** (Wang et al., 2026) — **[Paper](https://arxiv.org/abs/2608.31076)** · **[Code](https://github.com/zjunlp/AutoSciRub)**
@@ -199,6 +203,11 @@ Legend: **[Paper]** publication or preprint · **[Code]** implementation or benc
 
 - **dots studio — dots3 / dots3-note Preview** — **[Technical blog](https://studio.dots.ai/dots/dots3-en.html)** · **[IMO methodology and outputs](https://github.com/studio-dots-ai/dots_imo_2026)** · **[Open weights](https://huggingface.co/dots-studio/dots3-note-prev)**
   The documented IMO system uses a Proof → Verify → Refine loop with repeated critique, review, correction, and synthesis. The open-weight `dots3-note Preview` is Apache-2.0 licensed and publishes a broad benchmark card. **Caveat:** the public preview model and the internal IMO system should not be treated as identical, and the full dots3 technical report is still pending.
+
+### Model-Level and Metric-Level Feedback
+
+- **Goodfire — Silico / interpretability-guided improvement** — **[Company](https://www.goodfire.com/)** · **[Silico](https://www.goodfire.com/silico)** · **[RLFR](https://www.goodfire.com/research/rlfr)** · **[Self-Correcting Search](https://www.goodfire.com/research/self-correcting-search)**
+  Goodfire uses interpretability-derived signals as evaluators inside improvement loops. RLFR converts probes of model internals into rewards for weight-level training and test-time correction; Self-Correcting Search uses an internal-property probe to accept or reject diffusion steps, reporting roughly 30% more viable materials in the target range. Silico packages interpretability methods and long-running experiment orchestration as a product. **Scope note:** the public evidence supports evaluator-guided model and search improvement, not autonomous or open-ended RSI; Silico's end-to-end autonomous iteration has not yet been demonstrated through a public RSI benchmark.
 
 ### Metric and Evaluation Infrastructure
 

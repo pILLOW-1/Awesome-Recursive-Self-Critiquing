@@ -9,7 +9,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Project Website](https://img.shields.io/badge/project-website-165df5)](https://awesome-recursive-self-critiquing.saxoe.chatgpt.site)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Last Updated](https://img.shields.io/badge/updated-2026--09--02-blue)](#)
+[![Last Updated](https://img.shields.io/badge/updated-2026--09--03-blue)](#)
 [![Machine-readable catalog](https://img.shields.io/badge/catalog-JSON-0b7285)](catalog.json)
 [![Cite this repository](https://img.shields.io/badge/citation-CFF-7c3aed)](CITATION.cff)
 
@@ -188,6 +188,17 @@ Legend: **[Paper]** publication or preprint · **[Code]** implementation or benc
 
 - **RSI-Exam: Benchmarking Recursive Self-Improvement through Executable Research** (2026) — **[Benchmark](https://rsi-exam.ai/)** · **[Data](https://huggingface.co/datasets/RSI-Exam/RSI-Exam)**
   Long-horizon executable research tasks with a development environment and sealed evaluation environment. It tests whether an agent can improve a method or harness and generalize to hidden data; it does not claim unrestricted weight-level RSI.
+
+- **Aspire: Can Models Self-Evolve from Vague Goals?** (Wu et al., 2026) — **[Paper](https://arxiv.org/abs/2608.31111)** · **[Project](https://self-developing-agents.github.io/)**
+  Gives an agent only a broad capability goal, requiring it to select data and update methods, construct training and validation signals, and decide when to evaluate. The resulting weight-level or harness-level changes are tested on 520 hidden, expert-authored items across six goals. Current agents complete the loops, but weight-level gains are sparse and unstable, narrow self-evaluations often fail to transfer, and the strongest evolved harness remains below an engineered reference.
+
+- **S³Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?** (Shi et al., 2026) — **[Paper](https://arxiv.org/abs/2608.31100)** · **[Project](https://self-developing-agents.github.io/)**
+  Separates permissive exploration from strict held-out evaluation across seven executable text games, then compares History ICL, score-conditioned Summary Memory, and parameter training as experience-integration pathways. Its results expose task-dependent benefits, unstable parameter-level gains, and severe negative transfer when feedback is not converted into an executable, transferable policy.
+
+- **HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?** (Wu et al., 2026) — **[Paper](https://arxiv.org/abs/2609.01437)** · **[Project](https://self-developing-agents.github.io/)**
+  Evaluates both creating a runnable harness from a minimal seed and evolving it through downstream execution feedback. Capability is measured on hidden and held-out benchmarks alongside execution-token cost, while fixed-runtime experiments test whether gains belong to the harness or the model executing it. Evolution yields some gains, but they are unstable, transfer only partially, and depend strongly on the runtime model.
+
+  **Shared scope note:** these benchmarks study target formation, experience integration, and harness evolution as foundations for closed-loop RSI. They do not demonstrate unrestricted recursive self-improvement; their strongest evidence shows why locally measured gains often fail to transfer or persist.
 
 - **RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents Against Human Experts** (Wijk et al., 2024) — **[Paper](https://arxiv.org/abs/2411.15114)** · **[Code](https://github.com/METR/RE-Bench)**
   Seven open-ended ML research-engineering environments with human-expert baselines over different time budgets. It is a precursor and complementary capability benchmark for systems that could automate AI R&D.

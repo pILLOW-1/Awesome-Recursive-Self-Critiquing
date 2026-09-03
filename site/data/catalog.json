@@ -4,7 +4,7 @@
   "description": "A curated, evaluation-first catalog of recursive self-critiquing and recursive self-improvement research, benchmarks, projects, and industry systems.",
   "repository": "https://github.com/pILLOW-1/Awesome-Recursive-Self-Critiquing",
   "license": "CC-BY-4.0",
-  "last_updated": "2026-09-02",
+  "last_updated": "2026-09-03",
   "scope": {
     "include": [
       "Explicit evaluation of critique, correction, recursive depth, or iterative improvement",
@@ -304,6 +304,51 @@
       "relevance": "Uses development and sealed evaluation environments to measure whether agents improve methods or harnesses and generalize to hidden data.",
       "scope_note": "It does not claim unrestricted or weight-level recursive self-improvement.",
       "tags": ["benchmark", "executable-research", "hidden-evaluation", "automated-ai-research"]
+    },
+    {
+      "id": "aspire-vague-goal-self-evolution",
+      "name": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.31111",
+        "project": "https://self-developing-agents.github.io/"
+      },
+      "relevance": "Tests whether agents can operationalize vague capability goals and produce weight- or harness-level changes that transfer to hidden expert evaluation.",
+      "scope_note": "Current weight-level gains are sparse and unstable, and locally selected objectives often fail to transfer; this is evidence about barriers to closed-loop RSI rather than a demonstration of reliable RSI.",
+      "tags": ["benchmark", "vague-goals", "hidden-evaluation", "goal-formation", "weight-improvement", "harness-improvement"]
+    },
+    {
+      "id": "s3gym-self-testing-judging-improvement",
+      "name": "S³Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2608.31100",
+        "project": "https://self-developing-agents.github.io/"
+      },
+      "relevance": "Separates exploration from held-out evaluation to test how self-generated and self-judged experience becomes context, memory, or parameter-level improvement.",
+      "scope_note": "The bounded game environments expose task-dependent gains, unstable training, and negative transfer; recognizing successful behavior is not sufficient for persistent self-improvement.",
+      "tags": ["benchmark", "self-testing", "self-judging", "experience-integration", "held-out-evaluation", "negative-transfer"]
+    },
+    {
+      "id": "harnessdev-agent-harness-evolution",
+      "name": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+      "year": 2026,
+      "group": "academic",
+      "section": "rsi-and-automated-ai-rd-benchmarks",
+      "type": "benchmark-paper",
+      "urls": {
+        "paper": "https://arxiv.org/abs/2609.01437",
+        "project": "https://self-developing-agents.github.io/"
+      },
+      "relevance": "Measures creation and iterative evolution of runnable agent harnesses using hidden tasks, held-out benchmarks, execution cost, and fixed-runtime controls.",
+      "scope_note": "Underlying model weights remain fixed during harness evolution; gains are unstable, transfer only partially, and depend strongly on the runtime model.",
+      "tags": ["benchmark", "harness-evolution", "held-out-evaluation", "fixed-runtime-control", "efficiency", "causal-attribution"]
     },
     {
       "id": "re-bench",
